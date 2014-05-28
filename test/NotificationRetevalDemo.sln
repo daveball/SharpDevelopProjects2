@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.0.0.7070
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationRetevalDemo", "NotificationRetevalDemo.csproj", "{C48FD612-CCAC-4A87-8C6B-C3FB2249A30E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altova", "lib\Altova\Altova.csproj", "{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltovaXML", "lib\AltovaXML\AltovaXML.csproj", "{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoAcknowledgeNotificationReceipt_v0_1", "lib\SeoAcknowledgeNotificationReceipt_v0_1\SeoAcknowledgeNotificationReceipt_v0_1.csproj", "{CCED6773-C03C-494A-9769-2227E585E2A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoListNotifications_v0_1", "lib\SeoListNotifications_v0_1\SeoListNotifications_v0_1.csproj", "{47A0C84E-ECF8-374D-9890-C83678C8A55B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoReceiveNotification_v0_1", "lib\SeoReceiveNotification_v0_1\SeoReceiveNotification_v0_1.csproj", "{B71A70B1-19B3-4645-A307-5864F8463FE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C48FD612-CCAC-4A87-8C6B-C3FB2249A30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C48FD612-CCAC-4A87-8C6B-C3FB2249A30E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C48FD612-CCAC-4A87-8C6B-C3FB2249A30E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C48FD612-CCAC-4A87-8C6B-C3FB2249A30E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCED6773-C03C-494A-9769-2227E585E2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCED6773-C03C-494A-9769-2227E585E2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCED6773-C03C-494A-9769-2227E585E2A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCED6773-C03C-494A-9769-2227E585E2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47A0C84E-ECF8-374D-9890-C83678C8A55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47A0C84E-ECF8-374D-9890-C83678C8A55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47A0C84E-ECF8-374D-9890-C83678C8A55B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47A0C84E-ECF8-374D-9890-C83678C8A55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71A70B1-19B3-4645-A307-5864F8463FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71A70B1-19B3-4645-A307-5864F8463FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71A70B1-19B3-4645-A307-5864F8463FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71A70B1-19B3-4645-A307-5864F8463FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

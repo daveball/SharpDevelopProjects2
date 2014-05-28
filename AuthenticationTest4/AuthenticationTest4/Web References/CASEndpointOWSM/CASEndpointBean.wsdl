@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.scottishcitizen.gov.uk/service" name="CASEndpointBean" targetNamespace="http://www.scottishcitizen.gov.uk/service" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema xmlns="http://www.scottishcitizen.gov.uk/service" elementFormDefault="qualified" targetNamespace="http://www.scottishcitizen.gov.uk/service" version="0.1">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+      <xsd:element name="CitizenAccountRequestMessage">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CASRequestData" type="tns:CitizenAccountRequestType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CitizenAccountResponseMessage">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CASResponseData" type="tns:CitizenAccountResponseType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="CitizenAccountRequestType">
+        <xsd:sequence>
+          <xsd:element name="Header" type="tns:CitizenAccountRequestHeaderType" />
+          <xsd:any />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CitizenAccountResponseType">
+        <xsd:sequence>
+          <xsd:element name="Header" type="tns:CitizenAccountResponseHeaderType" />
+          <xsd:any minOccurs="0" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CitizenAccountRequestHeaderType">
+        <xsd:sequence>
+          <xsd:element name="PartnerID" type="xsd:string" />
+          <xsd:element name="UserID" type="xsd:string" />
+          <xsd:element name="CorrelationID" type="tns:CorrelationIDType" />
+          <xsd:element name="Timestamp" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CitizenAccountResponseHeaderType">
+        <xsd:sequence>
+          <xsd:element name="RequestHeader" type="tns:CitizenAccountRequestHeaderType" />
+          <xsd:element name="Timestamp" type="xsd:dateTime" />
+          <xsd:element name="Status" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="CorrelationIDType">
+        <xsd:annotation>
+          <xsd:documentation>The unique id given to the processed request. This can be used to trace the logs from the processed request.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:pattern value="[A-Za-z0-9]{15}" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="CitizenAccountFaultDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ErrorCode" type="tns:ErrorCodeType" />
+            <xsd:element name="ErrorDescription" type="xsd:string" />
+            <xsd:element name="CorrelationID" type="tns:CorrelationIDType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:simpleType name="ErrorCodeType">
+        <xsd:annotation>
+          <xsd:documentation>Unique Error Code from 0 to 99999.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:int">
+          <xsd:minInclusive value="0" />
+          <xsd:maxInclusive value="99999" />
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+  </types>
+  <message name="CitizenAccountMessageSoapIn">
+    <part name="CitizenAccountRequestPart" element="tns:CitizenAccountRequestMessage" />
+  </message>
+  <message name="CitizenAccountMessageSoapOut">
+    <part name="CitizenAccountResponsePart" element="tns:CitizenAccountResponseMessage" />
+  </message>
+  <message name="CitizenAccountFaultSoap">
+    <part name="CitizenAccountFaultDetail" element="tns:CitizenAccountFaultDetail" />
+  </message>
+  <portType name="CitizensAccountIntf">
+    <operation name="sendCitizenAccountMessage">
+      <documentation>Main entry point into the Citizen Account web service interface. Messages should be sent here for the Citizens Account to process.</documentation>
+      <input message="tns:CitizenAccountMessageSoapIn" />
+      <output message="tns:CitizenAccountMessageSoapOut" />
+      <fault name="fault" message="tns:CitizenAccountFaultSoap" />
+    </operation>
+  </portType>
+  <binding name="SubmitMessageSoapHttp" type="tns:CitizensAccountIntf">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="sendCitizenAccountMessage">
+      <soap:operation soapAction="http://www.scottishcitizen.gov.uk/service/sendCitizenAccountMessage" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="fault">
+        <soap:fault use="literal" name="fault" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="CASEndpointBean">
+    <documentation>Inprovment Service citizen account Web Service</documentation>
+    <port name="CASEndpointBean" binding="tns:SubmitMessageSoapHttp">
+      <soap:address location="http://owsm04.stirling.gov.uk:7777/gateway/services/SID0003001" />
+    </port>
+  </service>
+</definitions>

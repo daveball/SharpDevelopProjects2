@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{C48FD612-CCAC-4A87-8C6B-C3FB2249A30E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NotificationRetevalDemo</RootNamespace>
+    <AssemblyName>CAS_Webservices_Demo</AssemblyName>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\balld\Application Data\ICSharpCode/SharpDevelop4.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.WinFX.targets" />
+  <ItemGroup>
+    <Reference Include="Altova">
+      <HintPath>lib\Altova.dll</HintPath>
+    </Reference>
+    <Reference Include="AltovaXML">
+      <HintPath>lib\AltovaXML.dll</HintPath>
+    </Reference>
+    <Reference Include="CitizenServiceSubscribeRequest_v0_1">
+      <HintPath>..\..\Documents\CAS Interfaces Partner Guide v2-02\schema\LocalAuthority\serviceSubcribtion\CitizenServiceSubscribeRequest_v0_1\bin\Debug\CitizenServiceSubscribeRequest_v0_1.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3" />
+    <Reference Include="SeoCitizenRegistration_v0_2">
+      <HintPath>lib2\SeoCitizenRegistration_v0_2.dll</HintPath>
+    </Reference>
+    <Reference Include="SeoListNotifications_v0_1">
+      <HintPath>lib\SeoListNotifications_v0_1.dll</HintPath>
+    </Reference>
+    <Reference Include="SeoReceiveNotification_v0_1">
+      <HintPath>lib\SeoReceiveNotification_v0_1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CASEndpointBean.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Web References\casgway.stirling.gov.uk\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Web References\casgway.stirling.gov.uk\cas-gateway-common.xsd" />
+    <None Include="Web References\casgway.stirling.gov.uk\cas-gateway-message.xsd" />
+    <None Include="Web References\casgway.stirling.gov.uk\GatewayEndpoint.wsdl" />
+    <None Include="Web References\casgway.stirling.gov.uk\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="wse3policyCache.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+    <WebReferenceUrl Include="http://casgway.stirling.gov.uk:8080/cas-gateway/service/GatewayEndpoint.wsdl">
+      <UrlBehavior>Static</UrlBehavior>
+      <UpdateFromURL>http://casgway.stirling.gov.uk:8080/cas-gateway/service/GatewayEndpoint.wsdl</UpdateFromURL>
+      <RelPath>Web References\casgway.stirling.gov.uk</RelPath>
+      <Namespace>NotificationRetevalDemo.casgway.stirling.gov.uk</Namespace>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LA_CAS_Messages\LA_CAS_Messages.csproj">
+      <Project>{F8081469-7030-4BAA-ABF1-6C2FE814953A}</Project>
+      <Name>LA_CAS_Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeoAcknowledgeNotificationReceipt_v0_1\SeoAcknowledgeNotificationReceipt_v0_1.csproj">
+      <Project>{E904DE84-52FD-4341-A91E-88306FEDC85F}</Project>
+      <Name>SeoAcknowledgeNotificationReceipt_v0_1</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

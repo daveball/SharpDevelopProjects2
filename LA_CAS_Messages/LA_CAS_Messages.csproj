@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{F8081469-7030-4BAA-ABF1-6C2FE814953A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SeoQueryUCRN_v0_1</RootNamespace>
+    <AssemblyName>LA_CAS_Messages</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Altova">
+      <HintPath>..\CAS_WebServices_Demo\lib\Altova.dll</HintPath>
+    </Reference>
+    <Reference Include="AltovaXML">
+      <HintPath>..\CAS_WebServices_Demo\lib\AltovaXML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountStatusType.cs" />
+    <Compile Include="AddressGUIDType.cs" />
+    <Compile Include="AddressLineType.cs" />
+    <Compile Include="AddressQualifierType.cs" />
+    <Compile Include="AddressValidationType.cs" />
+    <Compile Include="AdministrativeAreaType.cs" />
+    <Compile Include="AONdescriptionType.cs" />
+    <Compile Include="AONrangeStructure.cs" />
+    <Compile Include="AONstructure.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="AuditContactDetailsType.cs" />
+    <Compile Include="AuditDetailsType.cs" />
+    <Compile Include="AuthenticationLevelType.cs" />
+    <Compile Include="BasicLandAndPropertyUnitStructure.cs" />
+    <Compile Include="BLPUextentStructure.cs" />
+    <Compile Include="BLPUpolygonStructure.cs" />
+    <Compile Include="BoSGUIDType.cs" />
+    <Compile Include="BSaddressStructure.cs" />
+    <Compile Include="CASAuthenticationRequestType.cs" />
+    <Compile Include="CASAuthenticationResponseType.cs" />
+    <Compile Include="CASAuthentication_v0_1Doc.cs" />
+    <Compile Include="CASAuthentication_v0_1_TypeInfo.cs" />
+    <Compile Include="ChangeAddressType.cs" />
+    <Compile Include="CharacterPositionType.cs" />
+    <Compile Include="CHINumberType.cs" />
+    <Compile Include="CitizenAccountDetailsGUIDType.cs" />
+    <Compile Include="CitizenAccountDetailsType.cs" />
+    <Compile Include="CitizenAddressChangeRequestType.cs" />
+    <Compile Include="CitizenConsentRequestType.cs" />
+    <Compile Include="CitizenDetailsType.cs" />
+    <Compile Include="CitizenEnrolmentRequestType.cs" />
+    <Compile Include="CitizenExpressInterestRequestType.cs" />
+    <Compile Include="CitizenExtendedDetailsType.cs" />
+    <Compile Include="CitizenGUIDType.cs" />
+    <Compile Include="CitizenMovedAwayRequestType.cs" />
+    <Compile Include="CitizenNameChangeRequestType.cs" />
+    <Compile Include="CitizenPhotoUploadRequestType.cs" />
+    <Compile Include="CitizenPreferredNameType.cs" />
+    <Compile Include="CitizenPropertyDetailsType.cs" />
+    <Compile Include="CitizenPropertyType.cs" />
+    <Compile Include="CitizenQuerySubsetType.cs" />
+    <Compile Include="CitizenRegistrationRequestType.cs" />
+    <Compile Include="CitizenRegistrationResponseType.cs" />
+    <Compile Include="CitizenRevokeInterestRequestType.cs" />
+    <Compile Include="CitizenSearchDetailsType.cs" />
+    <Compile Include="CitizenSecondaryAddressRequestType.cs" />
+    <Compile Include="CodeType.cs" />
+    <Compile Include="CoordinateStructure.cs" />
+    <Compile Include="CustodianCodeType.cs" />
+    <Compile Include="DateType.cs" />
+    <Compile Include="DeceasedCitizenAccountDetailsType.cs" />
+    <Compile Include="DeceasedCorrectionCitizenAccountDetailsType.cs" />
+    <Compile Include="DescriptionType.cs" />
+    <Compile Include="DisableReasonType.cs" />
+    <Compile Include="DocumentaryProof.cs" />
+    <Compile Include="DocumentaryProofType.cs" />
+    <Compile Include="ElementaryStreetUnitStructure.cs" />
+    <Compile Include="EmailAddressType.cs" />
+    <Compile Include="EmailStructure.cs" />
+    <Compile Include="EnableDisableAccountRequestType.cs" />
+    <Compile Include="EnableOrDisableChoiceType.cs" />
+    <Compile Include="EntitlementCardApplicationRequestType.cs" />
+    <Compile Include="EntitlementCardNumberType.cs" />
+    <Compile Include="ExistingWebSiteRegistrationType.cs" />
+    <Compile Include="FaxStructure.cs" />
+    <Compile Include="GenderAtRegistrationType.cs" />
+    <Compile Include="GROSQueryType.cs" />
+    <Compile Include="ImageTypeType.cs" />
+    <Compile Include="InformationType.cs" />
+    <Compile Include="InternationalAddressStructure.cs" />
+    <Compile Include="InternationalPostCodeType.cs" />
+    <Compile Include="InvestigationPropertyDetailsType.cs" />
+    <Compile Include="KnownFactTypeType.cs" />
+    <Compile Include="KnownFactValueType.cs" />
+    <Compile Include="LandAndPropertyIdentifierStructure.cs" />
+    <Compile Include="LanguageType.cs" />
+    <Compile Include="Level1EnrolmentType.cs" />
+    <Compile Include="Level2EnrolmentType.cs" />
+    <Compile Include="LevelType.cs" />
+    <Compile Include="ListKnownSupportedFactsResponseType.cs" />
+    <Compile Include="ListOutstandingVerificationsRequestType.cs" />
+    <Compile Include="ListOutstandingVerificationsResponseType.cs" />
+    <Compile Include="ListSupportedKnownFactsRequestType.cs" />
+    <Compile Include="ListSupportedKnownFacts_v0_1Doc.cs" />
+    <Compile Include="ListSupportedKnownFacts_v0_1_TypeInfo.cs" />
+    <Compile Include="LocalityType.cs" />
+    <Compile Include="LogicalStatusType.cs" />
+    <Compile Include="MailSortCodeType.cs" />
+    <Compile Include="MaritalStatusType.cs" />
+    <Compile Include="MemorableWordGUIDType.cs" />
+    <Compile Include="MothersBirthNameType.cs" />
+    <Compile Include="NewCitizenRegistrationType.cs" />
+    <Compile Include="NewPropertyType.cs" />
+    <Compile Include="NotificationIDType.cs" />
+    <Compile Include="NotificationOfDeathCorrectionType.cs" />
+    <Compile Include="NotificationOfDeathType.cs" />
+    <Compile Include="NumberType.cs" />
+    <Compile Include="OrganisationNameType.cs" />
+    <Compile Include="PasswordType.cs" />
+    <Compile Include="PendingAddressChangeCancelRequestType.cs" />
+    <Compile Include="PersonBirthDateStructure.cs" />
+    <Compile Include="PersonDeathDateStructure.cs" />
+    <Compile Include="PersonFamilyNameType.cs" />
+    <Compile Include="PersonGivenNameType.cs" />
+    <Compile Include="PersonNameStructure.cs" />
+    <Compile Include="PersonNameSuffixType.cs" />
+    <Compile Include="PersonNameTitleType.cs" />
+    <Compile Include="PersonRequestedNameType.cs" />
+    <Compile Include="PhotoType.cs" />
+    <Compile Include="PlaceOfBirthType.cs">
+      <DependentUpon>PhotoType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PolygonIDType.cs" />
+    <Compile Include="PolygonTypeType.cs" />
+    <Compile Include="PopulatedStringType.cs" />
+    <Compile Include="PostcodeSearchRequestType.cs" />
+    <Compile Include="PostcodeSearchResponseType.cs" />
+    <Compile Include="PostCodeType.cs" />
+    <Compile Include="PostTownType.cs" />
+    <Compile Include="PreviousPropertyType.cs" />
+    <Compile Include="ProofOfIdentityType.cs" />
+    <Compile Include="ProofOfResidenceType.cs" />
+    <Compile Include="PropertyDetails.cs" />
+    <Compile Include="PropertyDetailsType.cs" />
+    <Compile Include="ProvenanceCodeType.cs" />
+    <Compile Include="ProvenanceStructure.cs" />
+    <Compile Include="QueryAddressDetailsRequestType.cs" />
+    <Compile Include="QueryAddressDetailsRequest_v0_1Doc.cs" />
+    <Compile Include="QueryAddressDetailsRequest_v0_1_TypeInfo.cs" />
+    <Compile Include="QueryAddressDetailsResponseType.cs" />
+    <Compile Include="QueryCitizenHistoryRequestType.cs" />
+    <Compile Include="QueryCitizensAccountRequestType.cs" />
+    <Compile Include="QueryCitizensAccountResponseType.cs" />
+    <Compile Include="QueryDetailsType.cs" />
+    <Compile Include="QueryNoteType.cs" />
+    <Compile Include="QueryUCRNRequestType.cs" />
+    <Compile Include="QueryUCRNResponseType.cs" />
+    <Compile Include="RefPointGridCoordinateType.cs" />
+    <Compile Include="ReopenCitizensAccountRequestType.cs" />
+    <Compile Include="ReopenCitizensAccountRequest_v0_1Doc.cs" />
+    <Compile Include="ReopenCitizensAccountRequest_v0_1_TypeInfo.cs" />
+    <Compile Include="RepresentativePointCodeType.cs" />
+    <Compile Include="RequestMemorableWordCharsRequestType.cs" />
+    <Compile Include="RequestMemorableWordCharsResponseType.cs" />
+    <Compile Include="ResetMemorableWordRequestType.cs" />
+    <Compile Include="ResetPasswordRequestType.cs" />
+    <Compile Include="RestrictedStringType.cs" />
+    <Compile Include="RevokeCitizensAccountRequestType.cs" />
+    <Compile Include="RevokeCitizensAccountRequest_v0_1Doc.cs" />
+    <Compile Include="RevokeCitizensAccountRequest_v0_1_TypeInfo.cs" />
+    <Compile Include="ScottishLocalAuthorityCodeType.cs" />
+    <Compile Include="SecondaryAddressDetailsType.cs" />
+    <Compile Include="SecondaryAddressUpdateDetailsType.cs" />
+    <Compile Include="SecondaryPropertyActionType.cs" />
+    <Compile Include="SecurePrintRequestTypeType.cs" />
+    <Compile Include="SeoCitizenAdditionalDetails_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenAdditionalDetails_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoCitizenAddressChange_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenAddressChange_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoCitizenCommonTypes_v0_2Doc.cs" />
+    <Compile Include="SeoCitizenCommonTypes_v0_2_TypeInfo.cs" />
+    <Compile Include="SeoCitizenConsent_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenConsent_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoCitizenEnrolment_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenEnrolment_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoCitizenExpressInterestRequest_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenExpressInterestRequest_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoCitizenHistory_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenHistory_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoCitizenMovedAwayRequest_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenMovedAwayRequest_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoCitizenNameChange_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenNameChange_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoCitizenNameChange_v0_2Doc.cs" />
+    <Compile Include="SeoCitizenNameChange_v0_2_TypeInfo.cs" />
+    <Compile Include="SeoCitizenPhotoUpload_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenPhotoUpload_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoCitizenRegistration_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenRegistration_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoCitizenRevokeInterestRequest_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenRevokeInterestRequest_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoCitizenSecondaryAddress_v0_1Doc.cs" />
+    <Compile Include="SeoCitizenSecondaryAddress_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoEnableDisableAccount_v0_1Doc.cs" />
+    <Compile Include="SeoEnableDisableAccount_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoEntitlementCardApplication_v0_1Doc.cs" />
+    <Compile Include="SeoEntitlementCardApplication_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoListOutstandingVerificationsRequest_v0_1Doc.cs" />
+    <Compile Include="SeoListOutstandingVerificationsRequest_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoNotificationOfDeathCorrection_v0_1Doc.cs" />
+    <Compile Include="SeoNotificationOfDeathCorrection_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoNotificationOfDeath_v0_1Doc.cs" />
+    <Compile Include="SeoNotificationOfDeath_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoPendingAddressChangeCancelRequest_v0_1Doc.cs" />
+    <Compile Include="SeoPendingAddressChangeCancelRequest_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoPostcodeSearch_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoQueryCitizenAccount_v0_1Doc.cs" />
+    <Compile Include="SeoQueryCitizenAccount_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoQueryUCRN_v0_1Doc.cs" />
+    <Compile Include="SeoQueryUCRN_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoRequestMemorableWord_v0_1Doc.cs" />
+    <Compile Include="SeoRequestMemorableWord_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoResetPassword_v0_1Doc.cs" />
+    <Compile Include="SeoResetPassword_v0_1_TypeInfo.cs" />
+    <Compile Include="SeoVerifyAddressRequest_v0_1Doc.cs" />
+    <Compile Include="SeoVerifyAddressRequest_v0_1_TypeInfo.cs" />
+    <Compile Include="SimpleUKPhoneNumberType.cs" />
+    <Compile Include="SourceDescriptionType.cs" />
+    <Compile Include="SourceSystemType.cs" />
+    <Compile Include="StreetCrossReferencesType.cs" />
+    <Compile Include="StreetDescriptiveIdentifierStructure.cs" />
+    <Compile Include="StreetDescriptorType.cs" />
+    <Compile Include="StreetReferenceTypeType.cs" />
+    <Compile Include="StreetStructure.cs" />
+    <Compile Include="SuffixType.cs" />
+    <Compile Include="TelCountryCodeType.cs" />
+    <Compile Include="TelephoneExtensionType.cs" />
+    <Compile Include="TelephoneNumberType.cs" />
+    <Compile Include="TelephoneStructure.cs" />
+    <Compile Include="ThirdPartyPartnerCodeType.cs" />
+    <Compile Include="ToleranceType.cs" />
+    <Compile Include="TownType.cs" />
+    <Compile Include="UCRNType.cs" />
+    <Compile Include="UKAddressStructure.cs" />
+    <Compile Include="UKPostalAddressStructure.cs" />
+    <Compile Include="UPRNtype.cs" />
+    <Compile Include="UPRNType2.cs" />
+    <Compile Include="UserIDDetailsType.cs" />
+    <Compile Include="UserIDSystemChoiceType.cs" />
+    <Compile Include="UserIDType.cs" />
+    <Compile Include="USRNlistType.cs" />
+    <Compile Include="USRNtype.cs" />
+    <Compile Include="ValidateKnownFactRequestType.cs" />
+    <Compile Include="ValidateKnownFact_v0_1Doc.cs" />
+    <Compile Include="ValidateKnownFact_v0_1_TypeInfo.cs" />
+    <Compile Include="VerificationLevelType.cs" />
+    <Compile Include="VerifyAddressRequestType.cs" />
+    <Compile Include="VersionNumberType.cs" />
+    <Compile Include="WalkSortCodeType.cs" />
+    <Compile Include="WorkHomeType.cs" />
+    <Compile Include="XType.cs" />
+    <Compile Include="YesNoType.cs" />
+    <Compile Include="YType.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>

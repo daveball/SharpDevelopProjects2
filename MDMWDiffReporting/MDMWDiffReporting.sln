@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+# SharpDevelop 4.2.1.8805
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDMWDiffReporting", "MDMWDiffReporting\MDMWDiffReporting.csproj", "{B475CCB5-D578-4464-939C-DD37C860EE5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B475CCB5-D578-4464-939C-DD37C860EE5B}.Debug|x86.Build.0 = Debug|x86
+		{B475CCB5-D578-4464-939C-DD37C860EE5B}.Debug|x86.ActiveCfg = Debug|x86
+		{B475CCB5-D578-4464-939C-DD37C860EE5B}.Release|x86.Build.0 = Release|x86
+		{B475CCB5-D578-4464-939C-DD37C860EE5B}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

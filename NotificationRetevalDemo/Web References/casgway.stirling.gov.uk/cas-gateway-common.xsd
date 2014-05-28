@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:core="http://www.scottishcitizen.gov.uk/localgateway/core/1.0" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.scottishcitizen.gov.uk/localgateway/core/1.0" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+  <xs:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+  <xs:element name="LocalCASFaultDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ErrorCode" type="core:ErrorCodeType" />
+        <xs:element name="ErrorDescription" type="xs:string" />
+        <xs:element name="CorrelationID" type="core:CorrelationIDType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="CorrelationIDType">
+    <xs:annotation>
+      <xs:documentation>The unique id given to the processed request. This can be used to trace the logs from the processed request.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Za-z0-9]{15}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ErrorCodeType">
+    <xs:annotation>
+      <xs:documentation>Unique Error Code from 0 to 99999.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="99999" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Status">
+    <xs:annotation>
+      <xs:documentation>Status Code: either OK or Failed.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OK" />
+      <xs:enumeration value="Failed" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

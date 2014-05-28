@@ -1,0 +1,55 @@
+<policies xmlns="http://schemas.microsoft.com/wse/2005/06/policy">
+  <extensions>
+    <extension name="mutualCertificate10Security" type="Microsoft.Web.Services3.Design.MutualCertificate10Assertion, Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <extension name="x509" type="Microsoft.Web.Services3.Design.X509TokenProvider, Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <extension name="requireActionHeader" type="Microsoft.Web.Services3.Design.RequireActionHeaderAssertion, Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+  </extensions>
+  <policy name="Seemis">
+    <mutualCertificate10Security establishSecurityContext="false" renewExpiredSecurityContext="true" requireSignatureConfirmation="false" messageProtectionOrder="SignBeforeEncrypt" requireDerivedKeys="false" ttlInSeconds="300">
+      <clientToken>
+        <x509 storeLocation="CurrentUser" storeName="My" findValue="CN=Dave Ball, OU=Organisation - 03U_STIRLING_COUNCIL, OU=Customer First, O=Improvement Service Company" findType="FindBySubjectDistinguishedName" />
+      </clientToken>
+      <serviceToken>
+        <x509 storeLocation="CurrentUser" storeName="AddressBook" findValue="CN=Christopher Fowler, OU=Organisation - 03U_CAS_WS_ENC, OU=Customer First, O=Improvement Service Company" findType="FindBySubjectDistinguishedName" />
+      </serviceToken>
+      <protection>
+        <request signatureOptions="IncludeSoapBody" encryptBody="true" />
+        <response signatureOptions="IncludeSoapBody" encryptBody="true" />
+        <fault signatureOptions="IncludeSoapBody" encryptBody="false" />
+      </protection>
+    </mutualCertificate10Security>
+    <requireActionHeader />
+  </policy>
+	  <policy name="NorthLan">
+    <mutualCertificate10Security establishSecurityContext="false" renewExpiredSecurityContext="true" requireSignatureConfirmation="false" messageProtectionOrder="SignBeforeEncrypt" requireDerivedKeys="false" ttlInSeconds="300">
+      <clientToken>
+        <x509 storeLocation="CurrentUser" storeName="My" findValue="CN=Dave Ball, OU=Organisation - 03U_NORTH_LANARKSHIRE_COUNCIL, OU=Customer First, O=Improvement Service Company" findType="FindBySubjectDistinguishedName" />
+      </clientToken>
+      <serviceToken>
+        <x509 storeLocation="CurrentUser" storeName="AddressBook" findValue="CN=Christopher Fowler, OU=Organisation - 03U_CAS_WS_ENC, OU=Customer First, O=Improvement Service Company" findType="FindBySubjectDistinguishedName" />
+      </serviceToken>
+      <protection>
+        <request signatureOptions="IncludeSoapBody" encryptBody="true" />
+        <response signatureOptions="IncludeSoapBody" encryptBody="true" />
+        <fault signatureOptions="IncludeSoapBody" encryptBody="false" />
+      </protection>
+    </mutualCertificate10Security>
+    <requireActionHeader />
+  </policy>
+  <policy name="test">
+    <mutualCertificate10Security establishSecurityContext="false" renewExpiredSecurityContext="true" requireSignatureConfirmation="false" messageProtectionOrder="SignBeforeEncrypt" requireDerivedKeys="false" ttlInSeconds="300">
+      <clientToken>
+        <x509 storeLocation="CurrentUser" storeName="My" findValue="CN=Dave Ball, OU=Organisation - 03U_STIRLING_COUNCIL, OU=Customer First, O=Improvement Service Company" findType="FindBySubjectDistinguishedName" />
+      </clientToken>
+      <serviceToken>
+        <x509 storeLocation="CurrentUser" storeName="AddressBook" findValue="CN=Christopher Fowler, OU=Organisation - 03U_CAS_WS_ENC, OU=Customer First, O=Improvement Service Company" findType="FindBySubjectDistinguishedName" />
+      </serviceToken>
+      <protection>
+        <request signatureOptions="IncludeAddressing, IncludeTimestamp, IncludeSoapBody" encryptBody="true" />
+        <response signatureOptions="IncludeAddressing, IncludeTimestamp, IncludeSoapBody" encryptBody="true" />
+        <fault signatureOptions="IncludeAddressing, IncludeTimestamp, IncludeSoapBody" encryptBody="false" />
+      </protection>
+    </mutualCertificate10Security>
+    <requireActionHeader />
+  </policy>
+</policies>

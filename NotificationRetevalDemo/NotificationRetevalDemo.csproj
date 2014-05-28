@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{C48FD612-CCAC-4A87-8C6B-C3FB2249A30E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NotificationRetevalDemo</RootNamespace>
+    <AssemblyName>NotificationRetevalDemo</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.WinFX.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Services3" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CASEndpointBean.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Web References\casgway.stirling.gov.uk\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Web References\casgway.stirling.gov.uk\cas-gateway-common.xsd" />
+    <None Include="Web References\casgway.stirling.gov.uk\cas-gateway-message.xsd" />
+    <None Include="Web References\casgway.stirling.gov.uk\GatewayEndpoint.wsdl" />
+    <None Include="Web References\casgway.stirling.gov.uk\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="wse3policyCache.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+    <WebReferenceUrl Include="http://casgway.stirling.gov.uk:8080/cas-gateway/service/GatewayEndpoint.wsdl">
+      <UrlBehavior>Static</UrlBehavior>
+      <UpdateFromURL>http://casgway.stirling.gov.uk:8080/cas-gateway/service/GatewayEndpoint.wsdl</UpdateFromURL>
+      <RelPath>Web References\casgway.stirling.gov.uk</RelPath>
+      <Namespace>NotificationRetevalDemo.casgway.stirling.gov.uk</Namespace>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="lib\AltovaXML\AltovaXML.csproj">
+      <Project>{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}</Project>
+      <Name>AltovaXML</Name>
+    </ProjectReference>
+    <ProjectReference Include="lib\Altova\Altova.csproj">
+      <Project>{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}</Project>
+      <Name>Altova</Name>
+    </ProjectReference>
+    <ProjectReference Include="lib\SeoAcknowledgeNotificationReceipt_v0_1\SeoAcknowledgeNotificationReceipt_v0_1.csproj">
+      <Project>{CCED6773-C03C-494A-9769-2227E585E2A4}</Project>
+      <Name>SeoAcknowledgeNotificationReceipt_v0_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="lib\SeoListNotifications_v0_1\SeoListNotifications_v0_1.csproj">
+      <Project>{47A0C84E-ECF8-374D-9890-C83678C8A55B}</Project>
+      <Name>SeoListNotifications_v0_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="lib\SeoReceiveNotification_v0_1\SeoReceiveNotification_v0_1.csproj">
+      <Project>{B71A70B1-19B3-4645-A307-5864F8463FE0}</Project>
+      <Name>SeoReceiveNotification_v0_1</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

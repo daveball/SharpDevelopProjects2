@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<!--Created by Liquid XML Data Binding Libraries (www.liquid-technologies.com) for Liquid Technologies Limited-->
+<XmlStudioProject xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" Version="9.1.5.3408" UseRelativePaths="false">
+	<Project Name="QueryUCRN">
+		<SubGroup Name="Documents"/>
+		<SubGroup Name="Schemas">
+			<File Uri="C:\Working Directory\SharpDevelop Projects\QueryUCRN\SeoQueryUCRN-v0-1.xsd"/>
+			<File Uri="C:\Working Directory\SharpDevelop Projects\QueryUCRN\PersonalDetailsTypes-v1-3.xsd"/>
+			<File Uri="C:\Working Directory\SharpDevelop Projects\QueryUCRN\PersonDescriptiveTypes-v1-1.xsd"/>
+			<File Uri="C:\Working Directory\SharpDevelop Projects\QueryUCRN\AddressTypes-v2-0.xsd"/>
+			<File Uri="C:\Working Directory\SharpDevelop Projects\QueryUCRN\bs7666-v2-0.xsd"/>
+			<File Uri="C:\Working Directory\SharpDevelop Projects\QueryUCRN\CitizenIdentificationTypes-v1-4.xsd"/>
+			<File Uri="C:\Working Directory\SharpDevelop Projects\QueryUCRN\CommonSimpleTypes-v1-3.xsd"/>
+			<File Uri="C:\Working Directory\SharpDevelop Projects\QueryUCRN\ContactTypes-v1-3.xsd"/>
+			<File Uri="C:\Working Directory\SharpDevelop Projects\QueryUCRN\OrganisationIdentifierTypes-v1-0.xsd"/>
+		</SubGroup>
+		<SubGroup Name="Transforms"/>
+	</Project>
+	<SourceControl>
+		<ProviderName>TortoiseSVN Command Line</ProviderName>
+	</SourceControl>
+</XmlStudioProject>

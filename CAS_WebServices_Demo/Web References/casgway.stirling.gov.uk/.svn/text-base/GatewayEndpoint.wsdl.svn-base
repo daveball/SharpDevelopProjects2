@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:schema="http://www.scottishcitizen.gov.uk/localgateway" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://www.scottishcitizen.gov.uk/localgateway" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import schemaLocation="../xsd/cas-gateway-message.xsd" namespace="http://www.scottishcitizen.gov.uk/localgateway" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="LocalCASResponseMessage">
+    <wsdl:part name="LocalCASResponseMessage" element="schema:LocalCASResponseMessage" />
+  </wsdl:message>
+  <wsdl:message name="LocalCASRequestMessage">
+    <wsdl:part name="LocalCASRequestMessage" element="schema:LocalCASRequestMessage" />
+  </wsdl:message>
+  <wsdl:portType name="CasGateway">
+    <wsdl:operation name="LocalCAS">
+      <wsdl:input name="LocalCASRequestMessage" message="schema:LocalCASRequestMessage" />
+      <wsdl:output name="LocalCASResponseMessage" message="schema:LocalCASResponseMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CasGatewayBinding" type="schema:CasGateway">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LocalCAS">
+      <soap:operation soapAction="" />
+      <wsdl:input name="LocalCASRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="LocalCASResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CasGatewayService">
+    <wsdl:port name="CasGatewayPort" binding="schema:CasGatewayBinding">
+      <soap:address location="http://casgway.stirling.gov.uk:8080/cas-gateway/service/GatewayEndpoint" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

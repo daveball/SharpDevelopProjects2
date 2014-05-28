@@ -1,0 +1,171 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6310848-4644-2E42-BDAD-7E1270F32C02}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SeoNotificationOfDeathCorrection_v0_1</RootNamespace>
+    <AssemblyName>SeoNotificationOfDeathCorrection_v0_1</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+	<PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="SeoNotificationOfDeathCorrection_v0_1Doc.cs" />
+    <Compile Include="GenderAtRegistrationType.cs" />
+    <Compile Include="GenderCurrentType.cs" />
+    <Compile Include="DateType.cs" />
+    <Compile Include="RestrictedStringType.cs" />
+    <Compile Include="VerificationLevelType.cs" />
+    <Compile Include="PersonBirthDateStructure.cs" />
+    <Compile Include="PersonDeathDateStructure.cs" />
+    <Compile Include="PersonFamilyNameType.cs" />
+    <Compile Include="PersonFullNameType.cs" />
+    <Compile Include="PersonGivenNameType.cs" />
+    <Compile Include="PersonInitialsType.cs" />
+    <Compile Include="MaritalStatusType.cs" />
+    <Compile Include="PersonMaritalStatus.cs" />
+    <Compile Include="PersonMaritalStatusStructure.cs" />
+    <Compile Include="PersonNameTitleType.cs" />
+    <Compile Include="PersonNameSuffixType.cs" />
+    <Compile Include="PersonRequestedNameType.cs" />
+    <Compile Include="PersonNameStructure.cs" />
+    <Compile Include="AccountStatusType.cs" />
+    <Compile Include="AddressGUIDType.cs" />
+    <Compile Include="WorkHomeType.cs" />
+    <Compile Include="YesNoType.cs" />
+    <Compile Include="TelephoneNumberType.cs" />
+    <Compile Include="TelephoneExtensionType.cs" />
+    <Compile Include="TelCountryCodeType.cs" />
+    <Compile Include="TelephoneStructure.cs" />
+    <Compile Include="FaxStructure.cs" />
+    <Compile Include="EmailStructure.cs" />
+    <Compile Include="AuditContactDetailsType.cs" />
+    <Compile Include="OrganisationNameType.cs" />
+    <Compile Include="SourceSystemType.cs" />
+    <Compile Include="AuditDetailsType.cs" />
+    <Compile Include="AuthenticationLevelType.cs" />
+    <Compile Include="BoSGUIDType.cs" />
+    <Compile Include="CHINumberType.cs" />
+    <Compile Include="UCRNType.cs" />
+    <Compile Include="CitizenGUIDType.cs" />
+    <Compile Include="UPRNtype.cs" />
+    <Compile Include="UPRNType2.cs" />
+    <Compile Include="PreviousPropertyType.cs" />
+    <Compile Include="NewPropertyType.cs" />
+    <Compile Include="ChangeAddressType.cs" />
+    <Compile Include="EntitlementCardNumberType.cs" />
+    <Compile Include="MothersBirthNameType.cs" />
+    <Compile Include="PlaceOfBirthType.cs" />
+    <Compile Include="CitizenAccountDetailsGUIDType.cs" />
+    <Compile Include="CitizenAccountDetailsType.cs" />
+    <Compile Include="CitizenDetailsType.cs" />
+    <Compile Include="CitizenExtendedDetailsType.cs" />
+    <Compile Include="CitizenPreferredNameType.cs" />
+    <Compile Include="CitizenPropertyType.cs" />
+    <Compile Include="AddressLineType.cs" />
+    <Compile Include="PostCodeType.cs" />
+    <Compile Include="UKPostalAddressStructure.cs" />
+    <Compile Include="ScottishLocalAuthorityCodeType.cs" />
+    <Compile Include="CitizenPropertyDetailsType.cs" />
+    <Compile Include="CitizenQuerySubsetType.cs" />
+    <Compile Include="CitizenSearchDetailsType.cs" />
+    <Compile Include="DeceasedCitizenAccountDetailsType.cs" />
+    <Compile Include="DeceasedCorrectionCitizenAccountDetailsType.cs" />
+    <Compile Include="DocumentaryProof.cs" />
+    <Compile Include="CodeType.cs" />
+    <Compile Include="DescriptionType.cs" />
+    <Compile Include="DocumentaryProofType.cs" />
+    <Compile Include="GROSQueryType.cs" />
+    <Compile Include="InformationType.cs" />
+    <Compile Include="InvestigationPropertyDetailsType.cs" />
+    <Compile Include="KnownFactTypeType.cs" />
+    <Compile Include="KnownFactValueType.cs" />
+    <Compile Include="Level1EnrolmentType.cs" />
+    <Compile Include="Level2EnrolmentType.cs" />
+    <Compile Include="MemorableWordGUIDType.cs" />
+    <Compile Include="NotificationIDType.cs" />
+    <Compile Include="PasswordType.cs" />
+    <Compile Include="ImageTypeType.cs" />
+    <Compile Include="PhotoType.cs" />
+    <Compile Include="ProofOfIdentityType.cs" />
+    <Compile Include="ProofOfResidenceType.cs" />
+    <Compile Include="PropertyDetails.cs" />
+    <Compile Include="PropertyDetailsType.cs" />
+    <Compile Include="QueryNoteType.cs" />
+    <Compile Include="QueryDetailsType.cs" />
+    <Compile Include="SecondaryPropertyActionType.cs" />
+    <Compile Include="SecurePrintRequestTypeType.cs" />
+    <Compile Include="SimpleUKPhoneNumberType.cs" />
+    <Compile Include="ThirdPartyPartnerCodeType.cs" />
+    <Compile Include="UserIDType.cs" />
+    <Compile Include="UserIDSystemChoiceType.cs" />
+    <Compile Include="UserIDDetailsType.cs" />
+    <Compile Include="AdministrativeAreaType.cs" />
+    <Compile Include="NumberType.cs" />
+    <Compile Include="SuffixType.cs" />
+    <Compile Include="AONrangeStructure.cs" />
+    <Compile Include="AONdescriptionType.cs" />
+    <Compile Include="AONstructure.cs" />
+    <Compile Include="StreetDescriptorType.cs" />
+    <Compile Include="USRNtype.cs" />
+    <Compile Include="PostTownType.cs" />
+    <Compile Include="BSaddressStructure.cs" />
+    <Compile Include="CustodianCodeType.cs" />
+    <Compile Include="RepresentativePointCodeType.cs" />
+    <Compile Include="LogicalStatusType.cs" />
+    <Compile Include="XType.cs" />
+    <Compile Include="YType.cs" />
+    <Compile Include="CoordinateStructure.cs" />
+    <Compile Include="LevelType.cs" />
+    <Compile Include="StreetReferenceTypeType.cs" />
+    <Compile Include="ToleranceType.cs" />
+    <Compile Include="VersionNumberType.cs" />
+    <Compile Include="StreetDescriptiveIdentifierStructure.cs" />
+    <Compile Include="USRNlistType.cs" />
+    <Compile Include="RefPointGridCoordinateType.cs" />
+    <Compile Include="ElementaryStreetUnitStructure.cs" />
+    <Compile Include="StreetCrossReferencesType.cs" />
+    <Compile Include="StreetStructure.cs" />
+    <Compile Include="LandAndPropertyIdentifierStructure.cs" />
+    <Compile Include="ProvenanceCodeType.cs" />
+    <Compile Include="SourceDescriptionType.cs" />
+    <Compile Include="PolygonIDType.cs" />
+    <Compile Include="PolygonTypeType.cs" />
+    <Compile Include="BLPUpolygonStructure.cs" />
+    <Compile Include="BLPUextentStructure.cs" />
+    <Compile Include="ProvenanceStructure.cs" />
+    <Compile Include="BasicLandAndPropertyUnitStructure.cs" />
+    <Compile Include="LocalityType.cs" />
+    <Compile Include="TownType.cs" />
+    <Compile Include="NotificationOfDeathCorrectionType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AltovaXML\AltovaXML.csproj">
+      <Project>{03AAA791-EC2D-4A90-ABBF-45337E52DFD6}</Project>
+      <Name>AltovaXML</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Altova\Altova.csproj">
+      <Project>{D43E6C54-2DF5-454E-9566-DFFE2F3A6946}</Project>
+      <Name>Altova</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

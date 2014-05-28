@@ -1,0 +1,2 @@
+CASUtest = (DESCRIPTION = (ADDRESS = (PROTOCOL= TCP)
+    (Host= localhost)(Port= 1557)(CONNECT_DATA = (SERVICE_NAME = CASU)) 

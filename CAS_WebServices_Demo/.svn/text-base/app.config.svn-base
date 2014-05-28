@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<configSections>
+		<section name="microsoft.web.services3" type="Microsoft.Web.Services3.Configuration.WebServicesConfiguration, Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+	</configSections>
+	<system.web>
+		<webServices>
+			<soapExtensionImporterTypes>
+				<add type="Microsoft.Web.Services3.Description.WseExtensionImporter, Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+			</soapExtensionImporterTypes>
+		</webServices>
+		<compilation>
+			<assemblies>
+				<add assembly="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+			</assemblies>
+		</compilation>
+	</system.web>
+	<microsoft.web.services3>
+		<policy fileName="wse3policyCache.config" />
+		<security>
+			<securityTokenManager>
+				<add type="Microsoft.Web.Services3.Security.Tokens.UsernameTokenManager, Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" namespace="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" localName="UsernameToken" />
+				<add type="Microsoft.Web.Services3.Security.Tokens.EncryptedKeyTokenManager, Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" namespace="http://www.w3.org/2001/04/xmlenc#" localName="EncryptedKey">
+					<keyAlgorithm name="TripleDES" />
+				</add>
+			</securityTokenManager>
+			<binarySecurityTokenManager>
+				<add type="Microsoft.Web.Services3.Security.Tokens.X509SecurityTokenManager, Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" valueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3">
+					<keyAlgorithm name="RSA15" />
+					<sessionKeyAlgorithm name="TripleDES" />
+				</add>
+			</binarySecurityTokenManager>
+			<x509 storeLocation="CurrentUser" />
+		</security>
+		<diagnostics>
+			<trace enabled="true" input="inputTrace.webinfo" output="outputTrace.webinfo" />
+		</diagnostics>
+	</microsoft.web.services3>
+	<connectionStrings>
+		<!-- Example connection to a SQL Server Database on localhost. -->
+		<!-- <add name="ExampleConnectionString"
+			connectionString="Data Source=.;Initial Catalog=DBName;Integrated Security=True"
+			providerName="System.Data.SqlClient" /> -->
+	</connectionStrings>
+	<appSettings>
+		<!-- access these values via the property:
+			System.Configuration.ConfigurationManager.AppSettings[key]
+		-->
+		<add key="StirlingCouncil" value="Stirling" />
+		<add key="StirlingPartnerID" value="30" />
+		<add key="NorthLanCouncil" value="North_Lanarkshire" />
+		<add key="NorthLanPartnerID" value="22" />
+		<add key="RemoveMessagesFromQueue" value="True" />
+		<!--<add key="RemoveMessagesFromQueue" value="True" />-->
+		<add key="GatewayURL" value="http://casgway.stirling.gov.uk:8080/cas-gateway/service/GatewayEndpoint.wsdl" />
+		<add key="Setting2" value="Easy" />
+		<add key="SamlRequestService.ServiceEndpointURL" value="https://uatla.scottishcitizen.gov.uk/CASWebService/SAMLRequestPort?WSDL" />
+		<add key="Proxy" value="" />
+<!--	<add key="Proxy" value="http://net-inter-net:800/" />-->
+		<add key="ProxyUser" value="" />
+		<add key="ProxyPassword" value="" />
+		<add key="ProxyDomain" value="" />
+	</appSettings>
+</configuration>

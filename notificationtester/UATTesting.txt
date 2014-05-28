@@ -1,0 +1,964 @@
+ Test of Notification from CAS 27/02/2012 15:31:43
+
+requesting Notification List
+
+********************************************************************************
+ List  of   Notifications
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>6fe02229-ef96-4ae7-933b-024e608d36db</CorrelationID>
+        <Timestamp>2012-02-27T15:31:42.574+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:31:47.028+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ListNotificationsResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <Notification xmlns="">
+        <NotificationID>B7B9C730860BC96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenAddressChangeNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C7308614C96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>ConsentUpdateNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C7308625C96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenRegistrationNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C730863AC96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenRegistrationNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C730864FC96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenRegistrationNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C730868AC96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenRegistrationNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C73086A9C96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenRegistrationNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C73086E6C96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenRegistrationNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C73087A9C96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenSecondaryPropertyNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C73087AEC96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenSecondaryPropertyNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C73087B3C96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenSecondaryPropertyNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C7308A9BC96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenAddressChangeNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C7308AA2C96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenAddressChangeRequest</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C7308AB3C96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenAddressChangeNotification</NotificationType>
+      </Notification>
+      <Notification xmlns="">
+        <NotificationID>B7B9C7308ABAC96EE0401FAC02362F4A</NotificationID>
+        <NotificationType>CitizenAddressChangeRequest</NotificationType>
+      </Notification>
+    </v0:ListNotificationsResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenAddressChangeNotification Notification id:B7B9C730860BC96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>4c117f03-e0c9-4057-990a-5d0b4a5c8ee9</CorrelationID>
+      <Timestamp>2012-02-27T15:31:48.4820016+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C730860BC96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenAddressChangeNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>4c117f03-e0c9-4057-990a-5d0b4a5c8ee9</CorrelationID>
+        <Timestamp>2012-02-27T15:31:48.482+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:31:52.139+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C730860BC96EE0401FAC02362F4A</NotificationID>
+      <n3:CitizenAddressChangeNotification xmlns:n3="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.govtalk.gov.uk/core" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+        <UCRN xmlns="">9828684798446255052</UCRN>
+  <OldAddressDetails xmlns="">
+    <UPRN>122010357</UPRN>
+    <UKPostalAddress>
+    <AddressAndPersonalDetails:Line>1 HANOVER COURT</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>CASTLEHILL LOAN</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>KIPPEN</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>STIRLING COUNCIL</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:PostCode>FK8 3DZ</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+    <LACode>30</LACode>
+  </OldAddressDetails>
+  <NewAddressDetails xmlns="">
+    <UPRN>122017668</UPRN>
+    <UKPostalAddress>
+    <AddressAndPersonalDetails:Line>Council Offices</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>Viewforth</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>STIRLING</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:PostCode>FK8 2ET</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+    <LACode>30</LACode>
+  </NewAddressDetails>
+  <EffectiveDate xmlns="">2012-02-01</EffectiveDate>
+</n3:CitizenAddressChangeNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:ConsentUpdateNotification Notification id:B7B9C7308614C96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>894ac2f2-d107-4819-839e-1372e1d80373</CorrelationID>
+      <Timestamp>2012-02-27T15:31:51.5664368+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C7308614C96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+ConsentUpdateNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>894ac2f2-d107-4819-839e-1372e1d80373</CorrelationID>
+        <Timestamp>2012-02-27T15:31:51.566+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:31:53.381+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C7308614C96EE0401FAC02362F4A</NotificationID>
+      <n2:ConsentUpdateNotification xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:egifcore="http://www.govtalk.gov.uk/core" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+        <UCRN xmlns="">9828684798446255052</UCRN>
+      <OldConsentLevel xmlns="">no</OldConsentLevel>
+    <NewConsentLevel xmlns="">yes</NewConsentLevel>
+  </n2:ConsentUpdateNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenRegistrationNotification Notification id:B7B9C7308625C96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>a31fe85d-18db-4802-a2ef-34a00d3662fd</CorrelationID>
+      <Timestamp>2012-02-27T15:31:52.8182368+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C7308625C96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenRegistrationNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>a31fe85d-18db-4802-a2ef-34a00d3662fd</CorrelationID>
+        <Timestamp>2012-02-27T15:31:52.818+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:31:54.538+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C7308625C96EE0401FAC02362F4A</NotificationID>
+      <n2:CitizenRegistrationNotification xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:egifcore="http://www.govtalk.gov.uk/core" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+  <CitizenAccountDetails xmlns="">
+             <UCRN>9828684798446255052</UCRN>
+    <CitizenName>
+      <PersonDescriptives:PersonGivenName>WILLIAM</PersonDescriptives:PersonGivenName>
+      <PersonDescriptives:PersonFamilyName>DOW</PersonDescriptives:PersonFamilyName>
+      <PersonDescriptives:PersonRequestedName>WILLIAM</PersonDescriptives:PersonRequestedName>
+      
+    </CitizenName>
+    <DateOfBirth>
+      <PersonDescriptives:PersonBirthDate>1900-02-27</PersonDescriptives:PersonBirthDate>
+    </DateOfBirth>
+    <Gender>1</Gender>
+  </CitizenAccountDetails>
+  <AddressDetails xmlns="">
+    <UPRN>122017668</UPRN><UKPostalAddress>
+      <AddressAndPersonalDetails:Line>Council Offices</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>Viewforth</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>STIRLING</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:PostCode>FK8 2ET</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+  </AddressDetails>
+  <NationalLevelConsentFlag xmlns="">yes</NationalLevelConsentFlag>
+  <AuthenticationLevel xmlns="">2</AuthenticationLevel>
+</n2:CitizenRegistrationNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenRegistrationNotification Notification id:B7B9C730863AC96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>aa79645c-a778-47eb-b435-cbde1dd8da72</CorrelationID>
+      <Timestamp>2012-02-27T15:31:55.2216928+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C730863AC96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenRegistrationNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>aa79645c-a778-47eb-b435-cbde1dd8da72</CorrelationID>
+        <Timestamp>2012-02-27T15:31:55.222+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:31:56.65+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C730863AC96EE0401FAC02362F4A</NotificationID>
+      <n2:CitizenRegistrationNotification xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:egifcore="http://www.govtalk.gov.uk/core" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+  <CitizenAccountDetails xmlns="">
+             <UCRN>0919420623688604226</UCRN>
+    <CitizenName>
+      <PersonDescriptives:PersonGivenName>AGNES</PersonDescriptives:PersonGivenName>
+      <PersonDescriptives:PersonFamilyName>MURDOCH</PersonDescriptives:PersonFamilyName>
+      <PersonDescriptives:PersonRequestedName>AGNES</PersonDescriptives:PersonRequestedName>
+      
+    </CitizenName>
+    <DateOfBirth>
+      <PersonDescriptives:PersonBirthDate>1900-02-27</PersonDescriptives:PersonBirthDate>
+    </DateOfBirth>
+    <Gender>2</Gender>
+  </CitizenAccountDetails>
+  <AddressDetails xmlns="">
+    <UPRN>122017668</UPRN><UKPostalAddress>
+      <AddressAndPersonalDetails:Line>Council Offices</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>Viewforth</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>STIRLING</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:PostCode>FK8 2ET</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+  </AddressDetails>
+  <NationalLevelConsentFlag xmlns="">yes</NationalLevelConsentFlag>
+  <AuthenticationLevel xmlns="">2</AuthenticationLevel>
+</n2:CitizenRegistrationNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenRegistrationNotification Notification id:B7B9C730864FC96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>1a5cac70-c5f4-4413-a16f-8b3ac504c8c5</CorrelationID>
+      <Timestamp>2012-02-27T15:31:56.0829312+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C730864FC96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenRegistrationNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>1a5cac70-c5f4-4413-a16f-8b3ac504c8c5</CorrelationID>
+        <Timestamp>2012-02-27T15:31:56.083+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:31:57.798+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C730864FC96EE0401FAC02362F4A</NotificationID>
+      <n2:CitizenRegistrationNotification xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:egifcore="http://www.govtalk.gov.uk/core" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+  <CitizenAccountDetails xmlns="">
+             <UCRN>8624777846286972959</UCRN>
+    <CitizenName>
+      <PersonDescriptives:PersonGivenName>MARY</PersonDescriptives:PersonGivenName>
+      <PersonDescriptives:PersonFamilyName>MCDONNELL</PersonDescriptives:PersonFamilyName>
+      <PersonDescriptives:PersonRequestedName>MARY</PersonDescriptives:PersonRequestedName>
+      
+    </CitizenName>
+    <DateOfBirth>
+      <PersonDescriptives:PersonBirthDate>1900-02-27</PersonDescriptives:PersonBirthDate>
+    </DateOfBirth>
+    <Gender>2</Gender>
+  </CitizenAccountDetails>
+  <AddressDetails xmlns="">
+    <UPRN>122017668</UPRN><UKPostalAddress>
+      <AddressAndPersonalDetails:Line>Council Offices</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>Viewforth</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>STIRLING</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:PostCode>FK8 2ET</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+  </AddressDetails>
+  <NationalLevelConsentFlag xmlns="">yes</NationalLevelConsentFlag>
+  <AuthenticationLevel xmlns="">2</AuthenticationLevel>
+</n2:CitizenRegistrationNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenRegistrationNotification Notification id:B7B9C730868AC96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>01e330bd-7b2d-400a-8f93-9d804763d7f2</CorrelationID>
+      <Timestamp>2012-02-27T15:31:57.5350192+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C730868AC96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenRegistrationNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>01e330bd-7b2d-400a-8f93-9d804763d7f2</CorrelationID>
+        <Timestamp>2012-02-27T15:31:57.535+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:31:58.865+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C730868AC96EE0401FAC02362F4A</NotificationID>
+      <n2:CitizenRegistrationNotification xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:egifcore="http://www.govtalk.gov.uk/core" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+  <CitizenAccountDetails xmlns="">
+             <UCRN>7455294090723861384</UCRN>
+    <CitizenName>
+      <PersonDescriptives:PersonGivenName>ETTA</PersonDescriptives:PersonGivenName>
+      <PersonDescriptives:PersonFamilyName>COCHRANE</PersonDescriptives:PersonFamilyName>
+      <PersonDescriptives:PersonRequestedName>ETTA</PersonDescriptives:PersonRequestedName>
+      
+    </CitizenName>
+    <DateOfBirth>
+      <PersonDescriptives:PersonBirthDate>1900-02-26</PersonDescriptives:PersonBirthDate>
+    </DateOfBirth>
+    <Gender>2</Gender>
+  </CitizenAccountDetails>
+  <AddressDetails xmlns="">
+    <UPRN>122017668</UPRN><UKPostalAddress>
+      <AddressAndPersonalDetails:Line>Council Offices</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>Viewforth</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>STIRLING</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:PostCode>FK8 2ET</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+  </AddressDetails>
+  <NationalLevelConsentFlag xmlns="">yes</NationalLevelConsentFlag>
+  <AuthenticationLevel xmlns="">2</AuthenticationLevel>
+</n2:CitizenRegistrationNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenRegistrationNotification Notification id:B7B9C73086A9C96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>b4987739-b609-4cc2-9b0a-9eb9bf1fb3c7</CorrelationID>
+      <Timestamp>2012-02-27T15:31:58.306128+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C73086A9C96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenRegistrationNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>b4987739-b609-4cc2-9b0a-9eb9bf1fb3c7</CorrelationID>
+        <Timestamp>2012-02-27T15:31:58.306+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:31:59.958+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C73086A9C96EE0401FAC02362F4A</NotificationID>
+      <n2:CitizenRegistrationNotification xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:egifcore="http://www.govtalk.gov.uk/core" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+  <CitizenAccountDetails xmlns="">
+             <UCRN>8624777997337394356</UCRN>
+    <CitizenName>
+      <PersonDescriptives:PersonGivenName>CHARLES</PersonDescriptives:PersonGivenName>
+      <PersonDescriptives:PersonFamilyName>RENNIE</PersonDescriptives:PersonFamilyName>
+      <PersonDescriptives:PersonRequestedName>CHARLES</PersonDescriptives:PersonRequestedName>
+      
+    </CitizenName>
+    <DateOfBirth>
+      <PersonDescriptives:PersonBirthDate>1900-02-26</PersonDescriptives:PersonBirthDate>
+    </DateOfBirth>
+    <Gender>1</Gender>
+  </CitizenAccountDetails>
+  <AddressDetails xmlns="">
+    <UPRN>122017668</UPRN><UKPostalAddress>
+      <AddressAndPersonalDetails:Line>Council Offices</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>Viewforth</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>STIRLING</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:PostCode>FK8 2ET</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+  </AddressDetails>
+  <NationalLevelConsentFlag xmlns="">yes</NationalLevelConsentFlag>
+  <AuthenticationLevel xmlns="">2</AuthenticationLevel>
+</n2:CitizenRegistrationNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenRegistrationNotification Notification id:B7B9C73086E6C96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>ceca47af-5327-4337-a542-ff43b9ca362b</CorrelationID>
+      <Timestamp>2012-02-27T15:31:59.3776688+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C73086E6C96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenRegistrationNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>ceca47af-5327-4337-a542-ff43b9ca362b</CorrelationID>
+        <Timestamp>2012-02-27T15:31:59.378+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:32:00.858+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C73086E6C96EE0401FAC02362F4A</NotificationID>
+      <n2:CitizenRegistrationNotification xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:egifcore="http://www.govtalk.gov.uk/core" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+  <CitizenAccountDetails xmlns="">
+             <UCRN>7855697795099927165</UCRN>
+    <CitizenName>
+      <PersonDescriptives:PersonGivenName>MARY</PersonDescriptives:PersonGivenName>
+      <PersonDescriptives:PersonFamilyName>CLINTON</PersonDescriptives:PersonFamilyName>
+      <PersonDescriptives:PersonRequestedName>MARY</PersonDescriptives:PersonRequestedName>
+      
+    </CitizenName>
+    <DateOfBirth>
+      <PersonDescriptives:PersonBirthDate>1900-02-26</PersonDescriptives:PersonBirthDate>
+    </DateOfBirth>
+    <Gender>2</Gender>
+  </CitizenAccountDetails>
+  <AddressDetails xmlns="">
+    <UPRN>122017668</UPRN><UKPostalAddress>
+      <AddressAndPersonalDetails:Line>Council Offices</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>Viewforth</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>STIRLING</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:PostCode>FK8 2ET</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+  </AddressDetails>
+  <NationalLevelConsentFlag xmlns="">yes</NationalLevelConsentFlag>
+  <AuthenticationLevel xmlns="">2</AuthenticationLevel>
+</n2:CitizenRegistrationNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenSecondaryPropertyNotification Notification id:B7B9C73087A9C96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>c02c9c5b-0137-4ede-a1ac-ada67d47bd0f</CorrelationID>
+      <Timestamp>2012-02-27T15:32:00.2889792+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C73087A9C96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenSecondaryPropertyNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>c02c9c5b-0137-4ede-a1ac-ada67d47bd0f</CorrelationID>
+        <Timestamp>2012-02-27T15:32:00.289+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:32:01.739+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C73087A9C96EE0401FAC02362F4A</NotificationID>
+      <n3:CitizenSecondaryPropertyNotification xmlns:n3="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.govtalk.gov.uk/core" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+  <UCRN xmlns="">9606592799974477166</UCRN>
+  <SecondaryPropertyDetails xmlns="">
+      <UPRN>122017668</UPRN>
+   <UKPostalAddress>
+      <AddressAndPersonalDetails:Line>Council Offices</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>Viewforth</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>STIRLING</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:PostCode>FK8 2ET</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+  </SecondaryPropertyDetails>
+  <Action xmlns="">Add</Action>
+</n3:CitizenSecondaryPropertyNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenSecondaryPropertyNotification Notification id:B7B9C73087AEC96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>5e0682b8-2f45-43fb-93e9-2293d3d8578b</CorrelationID>
+      <Timestamp>2012-02-27T15:32:01.1502176+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C73087AEC96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenSecondaryPropertyNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>5e0682b8-2f45-43fb-93e9-2293d3d8578b</CorrelationID>
+        <Timestamp>2012-02-27T15:32:01.15+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:32:02.455+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C73087AEC96EE0401FAC02362F4A</NotificationID>
+      <n3:CitizenSecondaryPropertyNotification xmlns:n3="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.govtalk.gov.uk/core" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+  <UCRN xmlns="">6555135687899973946</UCRN>
+  <SecondaryPropertyDetails xmlns="">
+      <UPRN>122017668</UPRN>
+   <UKPostalAddress>
+      <AddressAndPersonalDetails:Line>Council Offices</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>Viewforth</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>STIRLING</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:PostCode>FK8 2ET</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+  </SecondaryPropertyDetails>
+  <Action xmlns="">Add</Action>
+</n3:CitizenSecondaryPropertyNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenSecondaryPropertyNotification Notification id:B7B9C73087B3C96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>5cd23b5a-9b69-4e2f-a3bf-ceb7f364b1fd</CorrelationID>
+      <Timestamp>2012-02-27T15:32:01.86124+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C73087B3C96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenSecondaryPropertyNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>5cd23b5a-9b69-4e2f-a3bf-ceb7f364b1fd</CorrelationID>
+        <Timestamp>2012-02-27T15:32:01.861+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:32:03.373+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C73087B3C96EE0401FAC02362F4A</NotificationID>
+      <n3:CitizenSecondaryPropertyNotification xmlns:n3="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.govtalk.gov.uk/core" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+  <UCRN xmlns="">9715199619455055055</UCRN>
+  <SecondaryPropertyDetails xmlns="">
+      <UPRN>122017668</UPRN>
+   <UKPostalAddress>
+      <AddressAndPersonalDetails:Line>Council Offices</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>Viewforth</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:Line>STIRLING</AddressAndPersonalDetails:Line>
+      <AddressAndPersonalDetails:PostCode>FK8 2ET</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+  </SecondaryPropertyDetails>
+  <Action xmlns="">Add</Action>
+</n3:CitizenSecondaryPropertyNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenAddressChangeNotification Notification id:B7B9C7308A9BC96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>48fd4c01-4ce3-4a6c-8d50-f3807eeee001</CorrelationID>
+      <Timestamp>2012-02-27T15:32:02.7825648+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C7308A9BC96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenAddressChangeNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>48fd4c01-4ce3-4a6c-8d50-f3807eeee001</CorrelationID>
+        <Timestamp>2012-02-27T15:32:02.783+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:32:04.248+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C7308A9BC96EE0401FAC02362F4A</NotificationID>
+      <n3:CitizenAddressChangeNotification xmlns:n3="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.govtalk.gov.uk/core" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+        <UCRN xmlns="">8020355972896057166</UCRN>
+  <OldAddressDetails xmlns="">
+    <UPRN>906700213560</UPRN>
+    <UKPostalAddress>
+    <AddressAndPersonalDetails:Line>FLAT 9</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>8 RIVERVIEW PLACE</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>GLASGOW</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>GLASGOW CITY</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:PostCode>G5 8EB</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+    <LACode>16</LACode>
+  </OldAddressDetails>
+  <NewAddressDetails xmlns="">
+    <UPRN>122009747</UPRN>
+    <UKPostalAddress>
+    <AddressAndPersonalDetails:Line>2 TAYLOR PLACE</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>STATION ROAD</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>BUCHLYVIE</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>STIRLING COUNCIL</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:PostCode>FK8 3NA</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+    <LACode>30</LACode>
+  </NewAddressDetails>
+  <EffectiveDate xmlns="">2012-02-02</EffectiveDate>
+</n3:CitizenAddressChangeNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenAddressChangeRequest Notification id:B7B9C7308AA2C96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>a13ddd9c-a728-40f8-875d-1b98e08383e9</CorrelationID>
+      <Timestamp>2012-02-27T15:32:03.9242064+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C7308AA2C96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenAddressChangeRequestMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>a13ddd9c-a728-40f8-875d-1b98e08383e9</CorrelationID>
+        <Timestamp>2012-02-27T15:32:03.924+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:32:05.266+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C7308AA2C96EE0401FAC02362F4A</NotificationID>
+      <n3:CitizenAddressChangeRequest xmlns:n3="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.govtalk.gov.uk/core" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+                 <UCRN xmlns="">8020355972896057166</UCRN>
+                  <NewUPRN xmlns="">122009747</NewUPRN>
+              <EffectiveDate xmlns="">2012-02-02</EffectiveDate>
+        </n3:CitizenAddressChangeRequest>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenAddressChangeNotification Notification id:B7B9C7308AB3C96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>2f39b800-98c8-481c-9463-166483cde753</CorrelationID>
+      <Timestamp>2012-02-27T15:32:04.6752864+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C7308AB3C96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenAddressChangeNotificationMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>2f39b800-98c8-481c-9463-166483cde753</CorrelationID>
+        <Timestamp>2012-02-27T15:32:04.675+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:32:06.355+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C7308AB3C96EE0401FAC02362F4A</NotificationID>
+      <n3:CitizenAddressChangeNotification xmlns:n3="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.govtalk.gov.uk/core" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+        <UCRN xmlns="">8020355972896057166</UCRN>
+  <OldAddressDetails xmlns="">
+    <UPRN>122009747</UPRN>
+    <UKPostalAddress>
+    <AddressAndPersonalDetails:Line>2 TAYLOR PLACE</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>STATION ROAD</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>BUCHLYVIE</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>STIRLING COUNCIL</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:PostCode>FK8 3NA</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+    <LACode>30</LACode>
+  </OldAddressDetails>
+  <NewAddressDetails xmlns="">
+    <UPRN>122009750</UPRN>
+    <UKPostalAddress>
+    <AddressAndPersonalDetails:Line>1 TAYLOR PLACE</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>STATION ROAD</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>BUCHLYVIE</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:Line>STIRLING COUNCIL</AddressAndPersonalDetails:Line>
+    <AddressAndPersonalDetails:PostCode>FK8 3NA</AddressAndPersonalDetails:PostCode>
+    </UKPostalAddress>
+    <LACode>30</LACode>
+  </NewAddressDetails>
+  <EffectiveDate xmlns="">2012-02-02</EffectiveDate>
+</n3:CitizenAddressChangeNotification>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>
+
+*******************************************************************************
+Request notification:CitizenAddressChangeRequest Notification id:B7B9C7308ABAC96EE0401FAC02362F4A
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountRequestMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASRequestData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <PartnerID>30</PartnerID>
+      <UserID>Stirling</UserID>
+      <CorrelationID>ccec6edb-0c16-44e9-ad8f-7bff41fb34eb</CorrelationID>
+      <Timestamp>2012-02-27T15:32:05.7768704+00:00</Timestamp>
+    </Header>
+    <ReceiveNotificationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/control/v0-1 SeoReceiveNotification-v0_1.xsd" xmlns="http://www.scottishcitizen.gov.uk/control/v0-1" xmlns:core="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666">
+      <NotificationID xmlns="">B7B9C7308ABAC96EE0401FAC02362F4A</NotificationID>
+    </ReceiveNotificationRequest>
+  </CASRequestData>
+</CitizenAccountRequestMessage>
+
+
+CitizenAddressChangeRequestMessage Detials:
+
+<?xml version="1.0" encoding="utf-16"?>
+<CitizenAccountResponseMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CASResponseData xmlns="http://www.scottishcitizen.gov.uk/service">
+    <Header>
+      <RequestHeader>
+        <PartnerID>30</PartnerID>
+        <UserID>Stirling</UserID>
+        <CorrelationID>ccec6edb-0c16-44e9-ad8f-7bff41fb34eb</CorrelationID>
+        <Timestamp>2012-02-27T15:32:05.777+00:00</Timestamp>
+      </RequestHeader>
+      <Timestamp>2012-02-27T15:32:07.201+00:00</Timestamp>
+      <Status>OK</Status>
+    </Header>
+    <v0:ReceiveNotificationResponse xmlns:v0="http://www.scottishcitizen.gov.uk/control/v0-1">
+      <NotificationID xmlns="">B7B9C7308ABAC96EE0401FAC02362F4A</NotificationID>
+      <n3:CitizenAddressChangeRequest xmlns:n3="http://www.scottishcitizen.gov.uk/citizen/v0-1" xmlns:bs7666="http://www.govtalk.gov.uk/people/bs7666" xmlns:PersonDescriptives="http://www.govtalk.gov.uk/people/PersonDescriptives" xmlns:core="http://www.govtalk.gov.uk/core" xmlns:n1="http://www.govtalk.gov.uk/metadata/egms" xmlns:AddressAndPersonalDetails="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails" xmlns:n2="http://www.scottishcitizen.gov.uk/citizen/core/v0-1" xsi:schemaLocation="http://www.scottishcitizen.gov.uk/citizen/v0-1">
+                 <UCRN xmlns="">8020355972896057166</UCRN>
+                  <NewUPRN xmlns="">122009750</NewUPRN>
+              <EffectiveDate xmlns="">2012-02-02</EffectiveDate>
+        </n3:CitizenAddressChangeRequest>
+    </v0:ReceiveNotificationResponse>
+  </CASResponseData>
+</CitizenAccountResponseMessage>

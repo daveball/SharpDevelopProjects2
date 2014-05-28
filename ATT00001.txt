@@ -1,0 +1,18 @@
+Dear DAVE BALL-MPKI CLIENT-PRIVATE,
+ 
+Thank you for requesting an additional Administrator ID for a Managed PKI Account. At this time, we cannot approve your Administrator ID for one or more of the following reasons:
+
++ We were unable to verify the organization's information;
++ We were unable to verify you as an authorized administrator for the organization; or
++ We have not received your payment.
+
+If any of your organizational contacts have changed, please work with Enterprise Authentication to update them.
+
+For more information, contact Symantec Enterprise Autentication at:
+http://www.verisign.com/support/contact/index.html 
+
+Thank you,
+ 
+PKI Authentication 
+ 
+Get answers now at https://knowledge.verisign.com/support/mpki-support/index.html

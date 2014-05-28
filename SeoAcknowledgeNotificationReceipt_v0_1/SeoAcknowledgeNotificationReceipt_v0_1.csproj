@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{E904DE84-52FD-4341-A91E-88306FEDC85F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SeoAcknowledgeNotificationReceipt_v0_1</RootNamespace>
+    <AssemblyName>SeoAcknowledgeNotificationReceipt_v0_1</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Altova">
+      <HintPath>..\CAS_WebServices_Demo\lib\Altova.dll</HintPath>
+    </Reference>
+    <Reference Include="AltovaXML">
+      <HintPath>..\CAS_WebServices_Demo\lib\AltovaXML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountStatusType.cs" />
+    <Compile Include="AcknowledgeNotificationReceiptType.cs" />
+    <Compile Include="AddressGUIDType.cs" />
+    <Compile Include="AddressLineType.cs" />
+    <Compile Include="AdministrativeAreaType.cs" />
+    <Compile Include="AONdescriptionType.cs" />
+    <Compile Include="AONrangeStructure.cs" />
+    <Compile Include="AONstructure.cs" />
+    <Compile Include="AuditContactDetailsType.cs" />
+    <Compile Include="AuditDetailsType.cs" />
+    <Compile Include="AuthenticationLevelType.cs" />
+    <Compile Include="BasicLandAndPropertyUnitStructure.cs" />
+    <Compile Include="BLPUextentStructure.cs" />
+    <Compile Include="BLPUpolygonStructure.cs" />
+    <Compile Include="BoSGUIDType.cs" />
+    <Compile Include="BSaddressStructure.cs" />
+    <Compile Include="ChangeAddressType.cs" />
+    <Compile Include="CHINumberType.cs" />
+    <Compile Include="CitizenAccountDetailsGUIDType.cs" />
+    <Compile Include="CitizenAccountDetailsType.cs" />
+    <Compile Include="CitizenDetailsType.cs" />
+    <Compile Include="CitizenExtendedDetailsType.cs" />
+    <Compile Include="CitizenGUIDType.cs" />
+    <Compile Include="CitizenPreferredNameType.cs" />
+    <Compile Include="CitizenPropertyDetailsType.cs" />
+    <Compile Include="CitizenPropertyType.cs" />
+    <Compile Include="CitizenQuerySubsetType.cs" />
+    <Compile Include="CitizenSearchDetailsType.cs" />
+    <Compile Include="CodeType.cs" />
+    <Compile Include="CoordinateStructure.cs" />
+    <Compile Include="CustodianCodeType.cs" />
+    <Compile Include="DateType.cs" />
+    <Compile Include="DeceasedCitizenAccountDetailsType.cs" />
+    <Compile Include="DeceasedCorrectionCitizenAccountDetailsType.cs" />
+    <Compile Include="DescriptionType.cs" />
+    <Compile Include="DocumentaryProof.cs" />
+    <Compile Include="DocumentaryProofType.cs" />
+    <Compile Include="ElementaryStreetUnitStructure.cs" />
+    <Compile Include="EmailStructure.cs" />
+    <Compile Include="EntitlementCardNumberType.cs" />
+    <Compile Include="FaxStructure.cs" />
+    <Compile Include="GenderAtRegistrationType.cs" />
+    <Compile Include="GROSQueryType.cs" />
+    <Compile Include="ImageTypeType.cs" />
+    <Compile Include="InformationType.cs" />
+    <Compile Include="InvestigationPropertyDetailsType.cs" />
+    <Compile Include="KnownFactTypeType.cs" />
+    <Compile Include="KnownFactValueType.cs" />
+    <Compile Include="LandAndPropertyIdentifierStructure.cs" />
+    <Compile Include="Level1EnrolmentType.cs" />
+    <Compile Include="Level2EnrolmentType.cs" />
+    <Compile Include="LevelType.cs" />
+    <Compile Include="LocalityType.cs" />
+    <Compile Include="LogicalStatusType.cs" />
+    <Compile Include="MemorableWordGUIDType.cs" />
+    <Compile Include="MothersBirthNameType.cs" />
+    <Compile Include="NewPropertyType.cs" />
+    <Compile Include="NotificationIDType.cs" />
+    <Compile Include="NumberType.cs" />
+    <Compile Include="OrganisationNameType.cs" />
+    <Compile Include="PasswordType.cs" />
+    <Compile Include="PersonBirthDateStructure.cs" />
+    <Compile Include="PersonDeathDateStructure.cs" />
+    <Compile Include="PersonFamilyNameType.cs" />
+    <Compile Include="PersonGivenNameType.cs" />
+    <Compile Include="PersonNameStructure.cs" />
+    <Compile Include="PersonNameSuffixType.cs" />
+    <Compile Include="PersonNameTitleType.cs" />
+    <Compile Include="PersonRequestedNameType.cs" />
+    <Compile Include="PhotoType.cs" />
+    <Compile Include="PlaceOfBirthType.cs" />
+    <Compile Include="PolygonIDType.cs" />
+    <Compile Include="PolygonTypeType.cs" />
+    <Compile Include="PostCodeType.cs" />
+    <Compile Include="PostTownType.cs" />
+    <Compile Include="PreviousPropertyType.cs" />
+    <Compile Include="ProofOfIdentityType.cs" />
+    <Compile Include="ProofOfResidenceType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyDetails.cs" />
+    <Compile Include="PropertyDetailsType.cs" />
+    <Compile Include="ProvenanceCodeType.cs" />
+    <Compile Include="ProvenanceStructure.cs" />
+    <Compile Include="QueryDetailsType.cs" />
+    <Compile Include="QueryNoteType.cs" />
+    <Compile Include="RefPointGridCoordinateType.cs" />
+    <Compile Include="RepresentativePointCodeType.cs" />
+    <Compile Include="RestrictedStringType.cs" />
+    <Compile Include="ScottishLocalAuthorityCodeType.cs" />
+    <Compile Include="SecondaryPropertyActionType.cs" />
+    <Compile Include="SecurePrintRequestTypeType.cs" />
+    <Compile Include="SeoAcknowledgeNotificationReceipt_v0_1Doc.cs" />
+    <Compile Include="SeoAcknowledgeNotificationReceipt_v0_1_TypeInfo.cs" />
+    <Compile Include="SimpleUKPhoneNumberType.cs" />
+    <Compile Include="SourceDescriptionType.cs" />
+    <Compile Include="SourceSystemType.cs" />
+    <Compile Include="StreetCrossReferencesType.cs" />
+    <Compile Include="StreetDescriptiveIdentifierStructure.cs" />
+    <Compile Include="StreetDescriptorType.cs" />
+    <Compile Include="StreetReferenceTypeType.cs" />
+    <Compile Include="StreetStructure.cs" />
+    <Compile Include="SuffixType.cs" />
+    <Compile Include="TelCountryCodeType.cs" />
+    <Compile Include="TelephoneExtensionType.cs" />
+    <Compile Include="TelephoneNumberType.cs" />
+    <Compile Include="TelephoneStructure.cs" />
+    <Compile Include="ThirdPartyPartnerCodeType.cs" />
+    <Compile Include="ToleranceType.cs" />
+    <Compile Include="TownType.cs" />
+    <Compile Include="UCRNType.cs" />
+    <Compile Include="UKPostalAddressStructure.cs" />
+    <Compile Include="UPRNtype.cs" />
+    <Compile Include="UPRNType2.cs" />
+    <Compile Include="UserIDDetailsType.cs" />
+    <Compile Include="UserIDSystemChoiceType.cs" />
+    <Compile Include="UserIDType.cs" />
+    <Compile Include="USRNlistType.cs" />
+    <Compile Include="USRNtype.cs" />
+    <Compile Include="VerificationLevelType.cs" />
+    <Compile Include="VersionNumberType.cs" />
+    <Compile Include="WorkHomeType.cs" />
+    <Compile Include="XType.cs" />
+    <Compile Include="YesNoType.cs" />
+    <Compile Include="YType.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>
